@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"math/rand/v2"
+	"sort"
 )
 
 type User struct {
@@ -90,6 +91,16 @@ func main() {
 		fmt.Println("zero")
 
 	}
+
+	array := []int{3, 1, 5, 9, 4}
+
+	fmt.Println(array[:])
+	fmt.Println(array[0:2])
+	fmt.Println(array[1:2])
+	sort.Ints(array)
+	fmt.Println(array)
+	sort.Sort(sort.Reverse(sort.IntSlice(array)))
+	fmt.Println(array)
 
 	//var x = calc(add)
 	//if x > 0 {
